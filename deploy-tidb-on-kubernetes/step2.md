@@ -1,4 +1,3 @@
-# 2. Local Storageのデプロイ
 
 ### 2.1. Local Storageをデプロイ
 `kubectl create -f https://raw.githubusercontent.com/ti-click/katacoda-scenarios/main/deploy-tidb-on-kubernetes/yaml/local-storage.yaml`{{execute}}

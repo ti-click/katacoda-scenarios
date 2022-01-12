@@ -1,4 +1,3 @@
-# 4. TiDBのデプロイ
 
 ### 4.1. TiDBをインストールするNamespaceを作成
 `kubectl create namespace tidb-cluster`{{execute}}

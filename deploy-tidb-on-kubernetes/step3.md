@@ -1,4 +1,3 @@
-# 3. TiDB Operatorのデプロイ
 
 ### 3.1. TiDB CRDのデプロイ
 `kubectl create -f https://raw.githubusercontent.com/pingcap/tidb-operator/master/manifests/crd.yaml`{{execute}}

@@ -1,4 +1,3 @@
-# 5. TiDBへアクセス
 
 ### 5.1. Ubuntu Podを起動
 `kubectl run -it  ubuntu --image ubuntu -n tidb-cluster -- bash`{{execute}}

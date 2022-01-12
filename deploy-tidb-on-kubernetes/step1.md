@@ -1,4 +1,3 @@
-# 1. Kubernetes クラスターの確認
 
 ### 1.1. Kubernetes Config Fileの導入
 `export KUBE_CONFIG=.kube/config`{{execute}}
