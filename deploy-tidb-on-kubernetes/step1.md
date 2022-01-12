@@ -10,9 +10,9 @@ Kubernetes Config Fileを導入しなかった場合、`kubectl`を実行する�
 `kubectl get node`{{execute}}
 
 実行例:
-<pre>
+```
 controlplane $ kubectl get node
 NAME           STATUS   ROLES    AGE   VERSION
 controlplane   Ready    master   57s   v1.18.0
 node01         Ready    none     27s   v1.18.0
-</pre>
+```
