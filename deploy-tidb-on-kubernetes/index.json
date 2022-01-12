@@ -1,0 +1,42 @@
+{
+  "title": "How Deploy TiDB on Kubernetes",
+  "description": "",
+  "difficulty": "Beginner",
+  "time": "40",
+  "details": {
+    "steps": [
+      {
+        "title": "1. Kubernetesの環境確認",
+        "text": "step1.md"
+      },
+      {
+        "title": "2. Local Storageのデプロイ",
+        "text": "step2.md"
+      },
+      {
+        "title": "3. TiDB Operatorのデプロイ",
+        "text": "step3.md"
+      },
+      {
+        "title": "4. TiDBのデプロイ",
+        "text": "step4.md"
+      },
+      {
+        "title": "5. TiDBへアクセス",
+        "text": "step5.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running:1.18"
+  }
+}
