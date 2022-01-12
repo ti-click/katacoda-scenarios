@@ -10,7 +10,7 @@ If you don't see a command prompt, try pressing enter.
 root@ubuntu:/#
 ```
 
-### 5.2. Ubuntu Podでaptを更新
+### 5.2. Ubuntu Podでapt updateを実施
 `apt update`{{execute}}
 
 例:
@@ -42,7 +42,7 @@ Reading state information... Done
 All packages are up to date.
 ```
 
-### 5.3. Ubuntu Podでaptを更新
+### 5.3. Ubuntu PodでMySQL Clientをインストール
 `apt install mysql-client -y`{{execute}}
 
 例:
