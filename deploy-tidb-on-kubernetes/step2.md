@@ -2,7 +2,8 @@
 ### 2.1. Local Storageをデプロイ
 `kubectl create -f https://raw.githubusercontent.com/ti-click/katacoda-scenarios/main/deploy-tidb-on-kubernetes/yaml/local-storage.yaml`{{execute}}
 
-実行例:
+例:
+
 ```
 controlplane $ kubectl apply -f https://raw.githubusercontent.com/ti-click/katacoda-scenarios/main/deploy-tidb-on-kubernetes/yaml/local-storage.yaml 
 serviceaccount/local-path-provisioner-service-account created
@@ -13,12 +14,11 @@ storageclass.storage.k8s.io/local-path created
 configmap/local-path-config created
 ```
 
-### 2. Local Storageをデプロイされた状況を確認
-
-#### 2.1 Podの確認
+#### 2.2 Podの確認
 `kubectl get pod -n kube-system`{{execute}}
 
-実行例:
+例:
+
 ```
 controlplane $ kubectl get pod -n kube-system
 NAMESPACE     NAME                                      READY   STATUS    RESTARTS   AGE
@@ -37,10 +37,11 @@ kube-system   kube-scheduler-controlplane               1/1     Running   0     
 kube-system   local-path-provisioner-55fb677577-2cwkw   1/1     Running   0          7s
 ```
 
-#### 2.2 Storage Classの確認
+#### 2.3 Storage Classの確認
 `kubectl get sc`{{execute}}
 
-実行例:
+例:
+
 ```
 controlplane $ kubectl get sc
 NAME                   PROVISIONER             RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE

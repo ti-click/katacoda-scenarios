@@ -7,7 +7,8 @@ Kubernetes Config Fileを導入しない や Kubernetesの構築が完成しな�
 ### 1.2. Kubernetes クラスターの状況を確認
 `kubectl get node`{{execute}}
 
-実行例:
+例:
+
 ```
 controlplane $ kubectl get node
 NAME           STATUS   ROLES    AGE   VERSION

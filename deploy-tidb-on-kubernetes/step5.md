@@ -2,7 +2,8 @@
 ### 5.1. Ubuntu Podを起動
 `kubectl run -it  ubuntu --image ubuntu -n tidb-cluster -- bash`{{execute}}
 
-実行例:
+例:
+
 ```
 controlplane $ kubectl run -it  ubuntu --image ubuntu -n tidb-cluster -- bash
 If you don't see a command prompt, try pressing enter.
@@ -12,7 +13,8 @@ root@ubuntu:/#
 ### 5.2. Ubuntu Podでaptを更新
 `apt update`{{execute}}
 
-実行例:
+例:
+
 ```
 root@ubuntu:/# apt update
 Get:1 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
@@ -43,7 +45,8 @@ All packages are up to date.
 ### 5.3. Ubuntu Podでaptを更新
 `apt install mysql-client -y`{{execute}}
 
-実行例:
+例:
+
 ```
 root@ubuntu:/# apt install mysql-client
 Reading package lists... Done
@@ -108,7 +111,8 @@ Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
 ### 5.4. TiDBへアクセス
 `mysql -h basic-tidb -uroot -P 4000`{{execute}}
 
-実行例:
+例:
+
 ```
 root@ubuntu:/# mysql -h basic-tidb -uroot -p -P 4000
 Enter password: 

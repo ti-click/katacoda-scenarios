@@ -2,7 +2,8 @@
 ### 4.1. TiDBをインストールするNamespaceを作成
 `kubectl create namespace tidb-cluster`{{execute}}
 
-実行例:
+例:
+
 ```
 controlplane $ kubectl create namespace tidb-cluster
 namespace/tidb-cluster created
@@ -11,7 +12,8 @@ namespace/tidb-cluster created
 ### 4.2. TiDBをインストールするNamespaceを作成
 `kubectl create -f https://raw.githubusercontent.com/pingcap/tidb-operator/master/examples/basic/tidb-cluster.yaml -n tidb-cluster`{{execute}}
 
-実行例:
+例:
+
 ```
 controlplane $ kubectl create -f https://raw.githubusercontent.com/pingcap/tidb-operator/master/examples/basic/tidb-cluster.yaml -n tidb-cluster
 tidbcluster.pingcap.com/basic created
@@ -20,14 +22,20 @@ tidbcluster.pingcap.com/basic created
 ### 4.3. TiDBのデプロイ結果を確認
 `kubectl get tc -n tidb-cluster`{{execute}}
 
-実行例:
+例:
 
+```
+controlplane $ kubectl get tc -n tidb-cluster
+NAME    READY   PD    STORAGE   READY   DESIRE   TIKV   STORAGE   READY   DESIRE   TIDB   READY   DESIRE   AGE
+basic   False         1Gi               1               1Gi               1                       1        3s
+```
 
 `basic-discovery`, `basic-pd`, `basic-tikv`と`basic-tidb`は`Running`の状態になると、TiDBクラスターが正常に稼働になる事です
 
 `kubectl get pod -n tidb-cluster`{{execute}}
 
-実行例:
+例:
+
 ```
 controlplane $ kubectl get pod -n tidb-cluster
 NAME                               READY   STATUS    RESTARTS   AGE
