@@ -1,24 +1,20 @@
 # 5. TiDBへアクセス
 
 ### 5.1. Ubuntu Podを起動
-<pre>
-`kubectl run -it  ubuntu --image ubuntu -n tidb-cluster -- bash`{{copy}}
-</pre>
+`kubectl run -it  ubuntu --image ubuntu -n tidb-cluster -- bash`{{execute}}
 
 実行例:
-<pre>
+```
 controlplane $ kubectl run -it  ubuntu --image ubuntu -n tidb-cluster -- bash
 If you don't see a command prompt, try pressing enter.
 root@ubuntu:/#
-</pre>
+```
 
 ### 5.2. Ubuntu Podでaptを更新
-<pre>
-`apt update`{{copy}}
-</pre>
+`apt update`{{execute}}
 
 実行例:
-<pre>
+```
 root@ubuntu:/# apt update
 Get:1 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
 Get:2 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]             
@@ -43,15 +39,13 @@ Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
 All packages are up to date.
-</pre>
+```
 
 ### 5.3. Ubuntu Podでaptを更新
-<pre>
-`apt install mysql-client -y`{{copy}}
-</pre>
+`apt install mysql-client -y`{{execute}}
 
 実行例:
-<pre>
+```
 root@ubuntu:/# apt install mysql-client
 Reading package lists... Done
 Building dependency tree       
@@ -110,15 +104,13 @@ Setting up mysql-client-core-8.0 (8.0.27-0ubuntu0.20.04.1) ...
 Setting up mysql-client-8.0 (8.0.27-0ubuntu0.20.04.1) ...
 Setting up mysql-client (8.0.27-0ubuntu0.20.04.1) ...
 Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
-</pre>
+```
 
 ### 5.4. TiDBへアクセス
-<pre>
-`mysql -h basic-tidb -uroot -P 4000`{{copy}}
-</pre>
+`mysql -h basic-tidb -uroot -P 4000`{{execute}}
 
 実行例:
-<pre>
+```
 root@ubuntu:/# mysql -h basic-tidb -uroot -p -P 4000
 Enter password: 
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -148,4 +140,4 @@ mysql> show databases;
 mysql> exit
 Bye
 root@ubuntu:/#
-</pre>
+```
