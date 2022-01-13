@@ -4,7 +4,7 @@
 
 例:
 
-```
+```shell
 controlplane $ kubectl run -it  ubuntu --image ubuntu -n tidb-cluster -- bash
 If you don't see a command prompt, try pressing enter.
 root@ubuntu:/#
@@ -15,7 +15,7 @@ root@ubuntu:/#
 
 例:
 
-```
+```shell
 root@ubuntu:/# apt update
 Get:1 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
 Get:2 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]             
@@ -47,7 +47,7 @@ All packages are up to date.
 
 例:
 
-```
+```shell
 root@ubuntu:/# apt install mysql-client
 Reading package lists... Done
 Building dependency tree       
@@ -113,7 +113,7 @@ Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
 
 例:
 
-```
+```sql
 root@ubuntu:/# mysql -h basic-tidb -uroot -p -P 4000
 Enter password: 
 Welcome to the MySQL monitor.  Commands end with ; or \g.

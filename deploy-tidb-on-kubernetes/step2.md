@@ -19,7 +19,7 @@ configmap/local-path-config created
 
 例:
 
-```
+```shell
 controlplane $ kubectl get pod -n kube-system
 NAMESPACE     NAME                                      READY   STATUS    RESTARTS   AGE
 kube-system   coredns-66bff467f8-82c5j                  1/1     Running   0          7m32s
@@ -42,7 +42,7 @@ kube-system   local-path-provisioner-55fb677577-2cwkw   1/1     Running   0     
 
 例:
 
-```
+```shell
 controlplane $ kubectl get sc
 NAME                   PROVISIONER             RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
 local-path (default)   rancher.io/local-path   Delete          WaitForFirstConsumer   false                  15s
