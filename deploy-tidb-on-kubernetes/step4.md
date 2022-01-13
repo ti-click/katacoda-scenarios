@@ -30,7 +30,7 @@ NAME    READY   PD    STORAGE   READY   DESIRE   TIKV   STORAGE   READY   DESIRE
 basic   False         1Gi               1               1Gi               1                       1        3s
 ```
 
-`basic-discovery`, `basic-pd`, `basic-tikv`と`basic-tidb`は`Running`の状態になると、TiDBクラスターが正常に稼働になる事です
+`basic-discovery`, `basic-pd`, `basic-tikv`と`basic-tidb`は`Running`の状態になれば、TiDBクラスターが正常に稼働しています
 
 `kubectl get pod -n tidb-cluster`{{execute}}
 

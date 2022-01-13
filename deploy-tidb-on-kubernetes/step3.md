@@ -97,7 +97,7 @@ Make sure tidb-operator components are running:
 ```
 
 ### 3.6. TiDB Operatorのデプロイ結果を確認
-`tidb-controller-manager`と`tidb-scheduler`は`Running`の状態になると、TiDB Operatorが正常に稼働になる事です。
+`tidb-controller-manager`と`tidb-scheduler`は`Running`の状態になれば、TiDB Operatorが正常に稼働しています。
 
 `kubectl get pods --namespace tidb-admin`{{execute}}
 

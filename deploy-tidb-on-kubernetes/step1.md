@@ -2,7 +2,7 @@
 ### 1.1. Kubernetes Config Fileの導入
 `export KUBE_CONFIG=.kube/config`{{execute}}
 
-Kubernetes Config Fileを導入しない や Kubernetesの構築が完成しない場合、`kubectl`を実行する際に`error: no configuration has been provided, try setting KUBERNETES_MASTER environment variable`エラーが表示されます。
+Kubernetes Config Fileを設定しない、またはKubernetesの構築が完了していない場合、`kubectl`を実行する際に`error: no configuration has been provided, try setting KUBERNETES_MASTER environment variable`エラーが表示されます。
 
 ### 1.2. Kubernetes クラスターの状況を確認
 `kubectl get node`{{execute}}

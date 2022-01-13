@@ -1,3 +1,3 @@
 # Katacoda scenarios
 
-### 1. KuberneteでTiDBを構築
+### 1. KubernetesでTiDBを構築
