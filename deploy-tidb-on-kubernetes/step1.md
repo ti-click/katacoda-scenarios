@@ -9,7 +9,7 @@ Kubernetes Config Fileを設定しない、またはKubernetesの構築が完了
 
 例:
 
-```
+```shell
 controlplane $ kubectl get node
 NAME           STATUS   ROLES    AGE   VERSION
 controlplane   Ready    master   57s   v1.18.0

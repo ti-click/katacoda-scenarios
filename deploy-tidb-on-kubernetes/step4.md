@@ -4,7 +4,7 @@
 
 例:
 
-```
+```shell
 controlplane $ kubectl create namespace tidb-cluster
 namespace/tidb-cluster created
 ```
@@ -14,7 +14,7 @@ namespace/tidb-cluster created
 
 例:
 
-```
+```shell
 controlplane $ kubectl create -f https://raw.githubusercontent.com/pingcap/tidb-operator/master/examples/basic/tidb-cluster.yaml -n tidb-cluster
 tidbcluster.pingcap.com/basic created
 ```
@@ -24,7 +24,7 @@ tidbcluster.pingcap.com/basic created
 
 例:
 
-```
+```shell
 controlplane $ kubectl get tc -n tidb-cluster
 NAME    READY   PD    STORAGE   READY   DESIRE   TIKV   STORAGE   READY   DESIRE   TIDB   READY   DESIRE   AGE
 basic   False         1Gi               1               1Gi               1                       1        3s
@@ -36,7 +36,7 @@ basic   False         1Gi               1               1Gi               1     
 
 例:
 
-```
+```shell
 controlplane $ kubectl get pod -n tidb-cluster
 NAME                               READY   STATUS    RESTARTS   AGE
 basic-discovery-5b677d7997-ps29t   1/1     Running   0          3m29s

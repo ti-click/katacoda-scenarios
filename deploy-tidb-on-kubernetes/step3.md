@@ -4,7 +4,7 @@
 
 例:
 
-```
+```shell
 controlplane $ kubectl apply -f https://raw.githubusercontent.com/pingcap/tidb-operator/master/manifests/crd.yaml
 customresourcedefinition.apiextensions.k8s.io/backups.pingcap.com created
 customresourcedefinition.apiextensions.k8s.io/backupschedules.pingcap.com created
@@ -22,7 +22,7 @@ customresourcedefinition.apiextensions.k8s.io/tidbngmonitorings.pingcap.com crea
 
 例:
 
-```
+```shell
 controlplane $ helm repo add pingcap https://charts.pingcap.org/
 "pingcap" has been added to your repositories
 ```
@@ -32,7 +32,7 @@ controlplane $ helm repo add pingcap https://charts.pingcap.org/
 
 例:
 
-```
+```shell
 controlplane $ kubectl create namespace tidb-admin
 namespace/tidb-admin created
 ```
@@ -42,7 +42,7 @@ namespace/tidb-admin created
 
 例:
 
-```
+```shell
 controlplane $ helm search repo tidb-operator --versions
 NAME                    CHART VERSION   APP VERSION     DESCRIPTION                            
 pingcap/tidb-operator   v1.2.6          v1.2.6          tidb-operator Helm chart for Kubernetes
@@ -82,7 +82,7 @@ pingcap/tidb-operator   v1.0.0                          tidb-operator Helm chart
 
 例:
 
-```
+```shell
 controlplane $ helm install --namespace tidb-admin tidb-operator pingcap/tidb-operator --version v1.2.4
 NAME: tidb-operator
 LAST DEPLOYED: Wed Jan 12 03:27:17 2022
@@ -103,7 +103,7 @@ Make sure tidb-operator components are running:
 
 例:
 
-```
+```shell
 controlplane $ kubectl get pods --namespace tidb-admin 
 NAME                                       READY   STATUS    RESTARTS   AGE
 tidb-controller-manager-759c67f44f-xsswl   1/1     Running   0          17s
